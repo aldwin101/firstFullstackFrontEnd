@@ -5,8 +5,8 @@
             <h3>{{content}}</h3>
         </div>
         <div>
-            <button>Edit</button>
-            <button>Delete</button>
+            <button @click="editPost">Edit</button>
+            <button @click="deletePost">Delete</button>
         </div>
     </div>
 </template>
