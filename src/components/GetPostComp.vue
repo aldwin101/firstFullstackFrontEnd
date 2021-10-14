@@ -13,11 +13,11 @@
 
 <script>
     export default {
-        name: 'TweetComp',
+        name: 'GetPostComp',
         props: {
                 id: Number,
                 content: String,
-            }
+            } 
         }
 </script>
 

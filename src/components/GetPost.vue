@@ -10,7 +10,7 @@
 import axios from 'axios'
 import GetPostComp from './GetPostComp.vue'
     export default {
-        name: 'TweetList',
+        name: 'GetPost',
         components: {
             GetPostComp,
         },
@@ -21,7 +21,7 @@ import GetPostComp from './GetPostComp.vue'
         },
         mounted () {
             axios.request({
-                url: 'http://firstfullstack.ga/api/posts',
+                url: 'https://www.firstfullstack.ga/api/posts',
                 method: 'GET',
                 headers: {
                         'Content-Type': 'application/json',
