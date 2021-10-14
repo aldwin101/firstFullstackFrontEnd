@@ -8,12 +8,12 @@
 </template>
 
 <script>
-    import axios from 'axios'
+import axios from 'axios'
     export default {
         name : 'HelloWorld',
         data(){
             return {
-                content:'',
+                content: this.content
             }
         },
         methods: {
@@ -22,7 +22,7 @@
                     url : 'https://firstfullstack.ga/api/posts',
                     method : 'POST',
                     headers : {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
                     },
                     data: {
                         'content': this.content
